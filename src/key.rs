@@ -45,8 +45,8 @@ pub trait PrivateKey: DecryptionPrimitive + PublicKeyParts {}
     serde(crate = "serde_crate")
 )]
 pub struct RSAPublicKey {
-    n: BigUint,
-    e: BigUint,
+    pub n: BigUint,
+    pub e: BigUint,
 }
 
 /// Represents a whole RSA key, public and private parts.
